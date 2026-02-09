@@ -36,7 +36,7 @@ def stock_in(db: Session, doc_no: str, items: list[dict], created_by: int) -> St
 
 
 def stock_out_for_order(db: Session, order_id: int, created_by: int) -> StockDocument:
-    order = order_repo.get_by_id(db, order_id)
+    order = order_repo.get_by_id_for_update(db, order_id)
     if not order:
         raise ValueError("Order not found")
     if order.status == OrderStatus.shipped:
