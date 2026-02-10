@@ -1,0 +1,302 @@
+{
+  "overview": {
+    "doc_count": 6,
+    "total_revenue": 61024.5,
+    "total_cost": 155564.0,
+    "total_profit": -94539.5,
+    "gross_margin": -1.5492,
+    "avg_doc_revenue": 10170.75
+  },
+  "supply_chain_metrics": {
+    "purchase_inbound_qty": 180.0,
+    "sale_outbound_qty": 95.0,
+    "inventory_balance_qty": 76.0,
+    "biz_type_metrics": {
+      "inventory_adjustment": {
+        "docs": 2,
+        "qty": -9.0,
+        "revenue": 0.0,
+        "cost": 3820.0
+      },
+      "purchase_inbound": {
+        "docs": 2,
+        "qty": 180.0,
+        "revenue": 0.0,
+        "cost": 107144.0
+      },
+      "sale_outbound": {
+        "docs": 2,
+        "qty": 95.0,
+        "revenue": 61024.5,
+        "cost": 44600.0
+      }
+    }
+  },
+  "department_metrics": {
+    "仓储": {
+      "docs": 2,
+      "revenue": 0.0,
+      "cost": 3820.0,
+      "profit": -3820.0
+    },
+    "采购": {
+      "docs": 2,
+      "revenue": 0.0,
+      "cost": 107144.0,
+      "profit": -107144.0
+    },
+    "销售": {
+      "docs": 2,
+      "revenue": 61024.5,
+      "cost": 44600.0,
+      "profit": 16424.5
+    }
+  },
+  "dimension_coverage": {
+    "商品资料": {
+      "product_name": {
+        "filled": 6,
+        "missing": 0
+      },
+      "unit": {
+        "filled": 6,
+        "missing": 0
+      },
+      "brand": {
+        "filled": 6,
+        "missing": 0
+      },
+      "tag": {
+        "filled": 6,
+        "missing": 0
+      },
+      "attribute": {
+        "filled": 6,
+        "missing": 0
+      },
+      "barcode": {
+        "filled": 6,
+        "missing": 0
+      }
+    },
+    "价格设置": {
+      "product_price": {
+        "filled": 6,
+        "missing": 0
+      },
+      "customer_price": {
+        "filled": 6,
+        "missing": 0
+      },
+      "supplier_price": {
+        "filled": 6,
+        "missing": 0
+      },
+      "price_priority": {
+        "filled": 6,
+        "missing": 0
+      },
+      "purchase_limit_price": {
+        "filled": 6,
+        "missing": 0
+      },
+      "sale_limit_price": {
+        "filled": 6,
+        "missing": 0
+      },
+      "promotion_policy": {
+        "filled": 6,
+        "missing": 0
+      }
+    },
+    "业务资料": {
+      "customer": {
+        "filled": 6,
+        "missing": 0
+      },
+      "supplier": {
+        "filled": 6,
+        "missing": 0
+      },
+      "department": {
+        "filled": 6,
+        "missing": 0
+      },
+      "employee": {
+        "filled": 6,
+        "missing": 0
+      },
+      "warehouse": {
+        "filled": 6,
+        "missing": 0
+      },
+      "bin_location": {
+        "filled": 6,
+        "missing": 0
+      },
+      "income_category": {
+        "filled": 6,
+        "missing": 0
+      },
+      "expense_category": {
+        "filled": 6,
+        "missing": 0
+      },
+      "settlement_term": {
+        "filled": 6,
+        "missing": 0
+      },
+      "logistics_company": {
+        "filled": 6,
+        "missing": 0
+      }
+    },
+    "财务资料": {
+      "currency": {
+        "filled": 6,
+        "missing": 0
+      },
+      "payment_method": {
+        "filled": 6,
+        "missing": 0
+      },
+      "account": {
+        "filled": 6,
+        "missing": 0
+      },
+      "subject": {
+        "filled": 6,
+        "missing": 0
+      },
+      "voucher_word": {
+        "filled": 6,
+        "missing": 0
+      },
+      "voucher_template": {
+        "filled": 6,
+        "missing": 0
+      },
+      "electronic_archive": {
+        "filled": 6,
+        "missing": 0
+      }
+    },
+    "期初录入": {
+      "opening_inventory": {
+        "filled": 6,
+        "missing": 0
+      },
+      "opening_consignment_balance": {
+        "filled": 6,
+        "missing": 0
+      },
+      "opening_customer_balance": {
+        "filled": 6,
+        "missing": 0
+      },
+      "opening_supplier_balance": {
+        "filled": 6,
+        "missing": 0
+      },
+      "opening_finance_balance": {
+        "filled": 6,
+        "missing": 0
+      },
+      "opening_cashflow_balance": {
+        "filled": 6,
+        "missing": 0
+      },
+      "opening_account_balance": {
+        "filled": 6,
+        "missing": 0
+      }
+    }
+  },
+  "traceability": {
+    "DT2001": {
+      "event_count": 3,
+      "events": [
+        {
+          "doc_id": "D2PO1001",
+          "date": "2026-01-01",
+          "biz_type": "purchase_inbound",
+          "stage": "采购入库",
+          "product_name": "智能手表A",
+          "qty": 100.0,
+          "inventory_delta": 100.0,
+          "revenue": 0.0,
+          "cost": 73160.0,
+          "profit": -73160.0
+        },
+        {
+          "doc_id": "D2IA1001",
+          "date": "2026-01-02",
+          "biz_type": "inventory_adjustment",
+          "stage": "库存调整",
+          "product_name": "智能手表A",
+          "qty": -6.0,
+          "inventory_delta": -6.0,
+          "revenue": 0.0,
+          "cost": 3100.0,
+          "profit": -3100.0
+        },
+        {
+          "doc_id": "D2SO1001",
+          "date": "2026-01-03",
+          "biz_type": "sale_outbound",
+          "stage": "销售出库",
+          "product_name": "智能手表A",
+          "qty": 40.0,
+          "inventory_delta": -40.0,
+          "revenue": 32364.0,
+          "cost": 24800.0,
+          "profit": 7564.0
+        }
+      ]
+    },
+    "DT2002": {
+      "event_count": 3,
+      "events": [
+        {
+          "doc_id": "D2PO1002",
+          "date": "2026-01-02",
+          "biz_type": "purchase_inbound",
+          "stage": "采购入库",
+          "product_name": "无线耳机B",
+          "qty": 80.0,
+          "inventory_delta": 80.0,
+          "revenue": 0.0,
+          "cost": 33984.0,
+          "profit": -33984.0
+        },
+        {
+          "doc_id": "D2SO1002",
+          "date": "2026-01-04",
+          "biz_type": "sale_outbound",
+          "stage": "销售出库",
+          "product_name": "无线耳机B",
+          "qty": 55.0,
+          "inventory_delta": -55.0,
+          "revenue": 28660.5,
+          "cost": 19800.0,
+          "profit": 8860.5
+        },
+        {
+          "doc_id": "D2IA1002",
+          "date": "2026-01-05",
+          "biz_type": "inventory_adjustment",
+          "stage": "库存调整",
+          "product_name": "无线耳机B",
+          "qty": -3.0,
+          "inventory_delta": -3.0,
+          "revenue": 0.0,
+          "cost": 720.0,
+          "profit": -720.0
+        }
+      ]
+    }
+  },
+  "insights": {
+    "top_department_by_profit": "销售"
+  }
+}

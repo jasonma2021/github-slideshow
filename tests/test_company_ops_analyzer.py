@@ -28,3 +28,12 @@ def test_load_records_and_summary() -> None:
 
     product_dimension = summary["dimension_coverage"]["商品资料"]
     assert all(metric["missing"] == 0 for metric in product_dimension.values())
+
+
+def test_demo_profitable_chain_has_positive_sales_profit() -> None:
+    records = load_records(Path("data/demo_profitable_chain.csv"))
+    summary = OpsAnalyzer(records).summary()
+
+    assert summary["overview"]["doc_count"] == 6
+    assert summary["department_metrics"]["销售"]["profit"] > 0
+    assert set(summary["traceability"].keys()) == {"DT1001", "DT1002"}

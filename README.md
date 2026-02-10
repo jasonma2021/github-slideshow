@@ -44,3 +44,18 @@ python3 company_ops_analyzer.py data/sample_orders.csv -o ops_report.json
 ```bash
 python3 -m pytest -q
 ```
+
+### Demo 数据模拟与报表产出
+已提供 3 份可直接运行的数据：
+- `data/sample_orders.csv`
+- `data/demo_profitable_chain.csv`
+- `data/demo_cost_pressure_chain.csv`
+
+运行以下命令可模拟分析并生成报表：
+```bash
+python3 company_ops_analyzer.py data/sample_orders.csv -o reports/sample_orders_report.json
+python3 company_ops_analyzer.py data/demo_profitable_chain.csv -o reports/demo_profitable_chain_report.json
+python3 company_ops_analyzer.py data/demo_cost_pressure_chain.csv -o reports/demo_cost_pressure_chain_report.json
+```
+
+生成结果示例位于 `reports/` 目录。
