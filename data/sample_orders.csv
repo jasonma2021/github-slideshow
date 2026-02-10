@@ -1,7 +1,7 @@
-order_id,date,department,revenue,cost
-A1001,2026-01-01,销售,15000,8200
-A1002,2026-01-01,市场,8000,5000
-A1003,2026-01-02,销售,22000,13000
-A1004,2026-01-02,客服,3000,1800
-A1005,2026-01-03,市场,12000,7300
-A1006,2026-01-03,客服,4600,2600
+doc_id,trace_id,date,biz_type,product_name,unit,brand,tag,attribute,barcode,product_price,customer_price,supplier_price,price_priority,purchase_limit_price,sale_limit_price,promotion_policy,customer,supplier,department,employee,warehouse,bin_location,income_category,expense_category,settlement_term,logistics_company,currency,payment_method,account,subject,voucher_word,voucher_template,electronic_archive,opening_inventory,opening_consignment_balance,opening_customer_balance,opening_supplier_balance,opening_finance_balance,opening_cashflow_balance,opening_account_balance,qty,revenue,cost
+PO1001,T001,2026-01-01,purchase_inbound,智能手表A,件,星云,可穿戴,蓝牙版,690100000001,799,899,620,客户价优先,650,950,满1000减50,华北零售,深蓝供应,采购,李明,上海一仓,A-01,主营业务收入,采购成本,30天,顺达物流,CNY,银行转账,工行-基本户,库存商品,记,标准凭证模板,EA-2026-001,120,3000,5000,4200,7000,1200,3500,100,0,62000
+IA1001,T001,2026-01-02,inventory_adjustment,智能手表A,件,星云,可穿戴,蓝牙版,690100000001,799,899,620,客户价优先,650,950,满1000减50,华北零售,深蓝供应,仓储,王强,上海一仓,A-01,其他业务收入,仓储损耗,30天,顺达物流,CNY,银行转账,工行-基本户,库存商品,记,标准凭证模板,EA-2026-002,120,3000,5000,4200,7000,1200,3500,-5,0,3100
+SO1001,T001,2026-01-03,sale_outbound,智能手表A,件,星云,可穿戴,蓝牙版,690100000001,799,899,620,客户价优先,650,950,满1000减50,华北零售,深蓝供应,销售,赵丽,上海一仓,A-01,主营业务收入,销售成本,30天,顺达物流,CNY,银行转账,工行-基本户,主营业务收入,记,标准凭证模板,EA-2026-003,120,3000,5000,4200,7000,1200,3500,40,35960,24800
+PO1002,T002,2026-01-02,purchase_inbound,无线耳机B,副,星云,音频,降噪版,690100000002,499,579,360,供应商价优先,380,620,节日促销,华东分销,远航供应,采购,李明,广州二仓,B-03,主营业务收入,采购成本,45天,快线物流,CNY,承兑汇票,招行-一般户,库存商品,记,标准凭证模板,EA-2026-004,80,2000,3500,2600,4200,900,2100,80,0,28800
+SO1002,T002,2026-01-04,sale_outbound,无线耳机B,副,星云,音频,降噪版,690100000002,499,579,360,供应商价优先,380,620,节日促销,华东分销,远航供应,销售,赵丽,广州二仓,B-03,主营业务收入,销售成本,45天,快线物流,CNY,承兑汇票,招行-一般户,主营业务收入,记,标准凭证模板,EA-2026-005,80,2000,3500,2600,4200,900,2100,55,31845,19800
+IA1002,T002,2026-01-05,inventory_adjustment,无线耳机B,副,星云,音频,降噪版,690100000002,499,579,360,供应商价优先,380,620,节日促销,华东分销,远航供应,仓储,王强,广州二仓,B-03,其他业务收入,仓储损耗,45天,快线物流,CNY,承兑汇票,招行-一般户,库存商品,记,标准凭证模板,EA-2026-006,80,2000,3500,2600,4200,900,2100,-2,0,720
